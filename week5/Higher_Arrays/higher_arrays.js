@@ -5,7 +5,7 @@ function fiveAndGreaterOnly(arr) {
     return arr.filter(num => num > 5);
 }
 
-console.log(fiveAndGreaterOnly([3, 6, 8, 2]));
+//console.log(fiveAndGreaterOnly([3, 6, 8, 2]));
 
 //2. Given an array of numbers, return a new array that only includes the even numbers.
 
@@ -13,7 +13,7 @@ function evensOnly(arr) {
     return arr.filter(num => num % 2 === 0);
     
 }
-console.log(evensOnly ([3, 6, 8, 2]));
+//console.log(evensOnly ([3, 6, 8, 2]));
 
 
 // B. Use the built-in .map() method on arrays to solve all of these problems:
@@ -23,7 +23,7 @@ function doubleNumbers(arr) {
     return arr.map(num => num * 2);
 }
 
-console.log(doubleNumbers([2, 5, 100]));
+//console.log(doubleNumbers([2, 5, 100]));
 
  //2. Take an array of numbers and make them strings
 
@@ -31,7 +31,7 @@ function stringItUp(arr) {
     return arr.map(num => num.toString());
 }
 
-console.log(stringItUp([2, 5, 100]));
+//console.log(stringItUp([2, 5, 100]));
 
 // 3. Capitalize each of an array of names
 
@@ -39,7 +39,7 @@ function capitalizeNames(arr) {
     return arr.map(name => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
 }
 
-console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+//console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
 
 
 // C.Use the built-in .reduce() method on arrays to solve all of these problems:
@@ -53,7 +53,7 @@ function total(arr) {
     }, 0);
 }
 
-console.log(total([1, 2, 3]));
+//console.log(total([1, 2, 3]));
 
 // 2. Turn an array of numbers into a long string of all those numbers.
 
@@ -64,7 +64,7 @@ function stringConcat(arr) {
     }, "");
 }
 
-console.log(stringConcat([1, 2, 3]));
+//console.log(stringConcat([1, 2, 3]));
 
 // 3. Turn an array of voter objects into a count of how many people voted
 
@@ -92,5 +92,44 @@ var voters = [
     { name: "Zack", age: 19, voted: false }
 ]
 
-console.log(totalVotes(voters));
+//console.log(totalVotes(voters));
 
+//Section D. Use the built-in .sort() method on arrays to solve all of these problems:
+
+//1. 
+
+function leastToGreatest(arr) 
+{
+    const result = arr.sort(function(a, b) {
+        return a - b;
+    }
+    )
+    return result;
+
+}
+//console.log(leastToGreatest([1, 3, 5, 2, 90, 20]));
+
+//2.
+
+function greatestToLeast(arr)
+{
+    const result = arr.sort(function(a, b) {
+        return b - a;
+    }
+    )
+    return result;
+}
+//console.log(greatestToLeast([1, 3, 5, 2, 90, 20]));
+
+//3.
+
+function lengthSort(arr)
+{
+    const result = arr.sort(function(a, b) {
+        return a.length - b.length;
+    }
+    )
+    return result;
+
+}
+console.log(lengthSort(["dog", "wolf", "by", "family", "eaten"]));
