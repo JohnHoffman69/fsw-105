@@ -22,7 +22,7 @@ else if (menuOptions == 2 && hasKey == false){
     hasKey = true;
 }
 else if (menuOptions == 2 && hasKey == true){
-    console.log(`${playerName},You have already found the kee and you are waisting time and proceed to option 3!`);
+    console.log(`${playerName},You have already found the key and you are waisting time and proceed to option 3!`);
 }
 else if  (menuOptions == 3 && hasKey == false){
     //First time player chooses option 2, and has Not found the key
