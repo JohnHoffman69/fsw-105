@@ -1,3 +1,6 @@
+
+
+
 const readlineSync = require(`readline-sync`);
 
 let demons = [`Red Demon`, `Yellow Demon`, `Black Demon`];
